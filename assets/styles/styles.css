@@ -1,15 +1,10 @@
+
 :root {
     --main-gradient: linear-gradient(180.96deg, #000000 0.82%, #4A2800 129.1%);
     --main-color: #FA9021;
     --title-color:#FFFFFF;
     --font-poppins: 'Poppins', sans-serif;
     --font-rubik: 'Rubik', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -80,7 +75,6 @@ ul {
     height: calc(100vh - 60px);
     background-color: rgba(0, 0, 0, 0.95);
     transition: right 0.3s ease;
-    padding: 20px;
     z-index: 4;
 }
 
@@ -105,7 +99,7 @@ ul {
 .contact-button {
     display: inline-block;
     font-size: 13px;
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-radius: 6px;
     background-color: var(--main-color);
     color: var(--title-color);
@@ -173,7 +167,6 @@ ul {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 16px;
 }
 
 .trending-games {
@@ -202,7 +195,7 @@ ul {
 .see-all-btn {
     background-color: #FFFFFF1C;
     color: var(--title-color);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 500;
@@ -348,15 +341,14 @@ ul {
     height: 64px;
     background-color: #ffffff;
     border-radius: 32px;
-    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .service-icon .icon {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     fill: #DC7000;
 }
 
@@ -382,7 +374,7 @@ ul {
 
 
 .projects-section {
-    padding: 71px 16px;
+    padding: 71px 50px;
     background: #090300;
 }
 
@@ -508,7 +500,7 @@ ul {
 .footer-logo {
     font-size: 18px;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 }
 
 .footer-brand-text {
@@ -516,6 +508,8 @@ ul {
     line-height: 1.5;
     padding-top: 9px;
     opacity: 0.9;
+    margin-top: 5px;
+    padding: 0;
 }
 
 .footer-handle {
@@ -539,7 +533,15 @@ ul {
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
+    margin: 0;
+    
 }
+
+.footer-list{
+    margin-top: 5px;
+    padding: 0;
+}
+
 
 .footer-link {
     cursor: pointer;
@@ -799,8 +801,14 @@ ul {
     text-align: center;
     font-size: 12px;
     opacity: 0.7;
+    margin-top: 0;
+    padding: 0;
 }
 
+.copyright p{
+    margin: 0;
+    padding: 0;
+}
 
 .about-first-background {
     background: linear-gradient(151deg, #010101 0%, #1A0E01 100%);
@@ -1771,11 +1779,6 @@ button:hover {
     top: 85px;
 }
 
-
-
-/* Media Queries for Portfolio Project Card Section Four */
-
-
 @media screen and (max-width: 800px){
     .follow-info{
         display: flex;
@@ -1948,11 +1951,6 @@ button:hover {
     }
 }
 
-
-
-
-/******************* Media Queries for Larger Screens ****************** */
-
 @media (max-width: 768px) {
     .portfolio-item {
         flex-direction: column;
@@ -2000,7 +1998,6 @@ button:hover {
     }
 }
 
-/* Tablets (481px–768px) */
 @media screen and (min-width: 481px) {
     .header {
         padding: 15px 20px;
@@ -2058,16 +2055,17 @@ button:hover {
     }
 
     .projects-grid img {
-        max-height: 180px;
+        max-height: 100px;
         object-fit: cover;
     }
 
     .content-section {
-        padding: 50px 20px;
+        padding: 20px 20px;
     }
 
     .content-title {
         font-size: 20px;
+        padding: 0 50px;
     }
 
     .content-row {
@@ -2096,11 +2094,7 @@ button:hover {
     }
 
     .projects-section {
-        padding: 50px 20px;
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 50px;
     }
 
     .newsletter-form {
@@ -2119,7 +2113,6 @@ button:hover {
     }
 }
 
-/* Small Screens, Laptops (769px–1024px) */
 @media screen and (min-width: 769px) {
     .header {
         padding: 20px 30px;
@@ -2160,7 +2153,7 @@ button:hover {
     }
 
     .trending-games {
-        padding: 60px 30px;
+        padding: 60px 50px;
     }
 
     .section-title {
@@ -2172,11 +2165,12 @@ button:hover {
     }
 
     .content-section {
-        padding: 60px 30px;
+        padding: 30px 30px;
     }
 
     .content-title {
         font-size: 22px;
+        padding: 0 100px;
     }
 
     .content-subtitle {
@@ -2200,7 +2194,7 @@ button:hover {
     }
 
     .projects-section {
-        padding: 60px 30px;
+        padding: 60px 50px;
     }
 
     .projects-grid {
@@ -2245,7 +2239,6 @@ button:hover {
     }
 }
 
-/* Desktops, Large Screens (1025px–1200px) */
 @media screen and (min-width: 1025px) {
     .burger-menu {
         display: none;
@@ -2267,8 +2260,7 @@ button:hover {
     }
 
     .main-registration {
-        margin-top: 0;
-        margin-left: 40px;
+        margin-left: 10px;
     }
 
     .hero-section {
@@ -2307,7 +2299,7 @@ button:hover {
     }
 
     .trending-games {
-        padding: 80px 40px;
+        padding: 80px 60px;
     }
 
     .games-grid {
@@ -2315,11 +2307,12 @@ button:hover {
     }
 
     .content-section {
-        padding: 80px 40px;
+        padding: 40px 40px;
     }
 
     .content-title {
         font-size: 24px;
+        padding: 0 150px;
     }
 
     .services-section {
@@ -2331,7 +2324,7 @@ button:hover {
     }
 
     .projects-section {
-        padding: 80px 40px;
+        padding: 80px 50px;
     }
 
     .newsletter-content {
@@ -2366,7 +2359,7 @@ button:hover {
         height: auto;
         position: absolute;
         top: -50px;
-        left: 900px;
+        left: 700px;
         z-index: 1;
     }
 
@@ -2413,7 +2406,6 @@ button:hover {
     }
 }
 
-/* Extra Large Screens, TV (1201px and up) */
 @media screen and (min-width: 1201px) {
     .header {
         padding: 20px 50px;
@@ -2454,7 +2446,7 @@ button:hover {
     }
 
     .trending-games {
-        padding: 100px 50px;
+        padding: 100px 70px;
     }
 
     .section-title {
@@ -2462,11 +2454,12 @@ button:hover {
     }
 
     .content-section {
-        padding: 100px 50px;
+        padding: 50px 50px;
     }
 
     .content-title {
         font-size: 28px;
+        padding: 0 200px;
     }
 
     .content-subtitle {
@@ -2490,12 +2483,12 @@ button:hover {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr); /* Три колонки для десктопів */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
     .projects-grid img {
-        max-height: 200px; /* Стандартна висота для десктопів */
+        max-height: 200px;
     }
 
     .projects-title {
@@ -2528,6 +2521,7 @@ button:hover {
 
     .footer-section-title {
         font-size: 18px;
+
     }
 
     .footer-link {
